@@ -7,7 +7,7 @@ from utils.task import Task
 # Compile the graph
 graph = build_workflow(supervisor_agent, worker_map)
 events = graph.stream(
-    {"messages": [HumanMessage(content=Task.FEDERAL_TAX.value)]},
+    {"messages": [HumanMessage(content=Task.MORTGAGE.value)]},
     # Maximum number of steps to take in the graph
     {"recursion_limit": 30},
 )
